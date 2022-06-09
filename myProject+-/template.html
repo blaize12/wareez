@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Style the header */
+    
+    .header {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+    }
+    /* Create three equal columns that floats next to each other */
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the footer */
+    
+    .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    
+    @media (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoNXP8pvQkpNIZXdiVqq170IgWfOM_T8aYoA&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <h2>CSS Template using Float</h2>
+    <p>In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+
+    <div class="header">
+        <h2>Header</h2>
+        <img src="blue.jpg">
+        <h3> HOW TO SEARCH FOR A BET</h3>
+        <p>You can search for a bet by following the simple steps below;</p>
+        <li>Step 1: Log in to your account</li>
+        <li>Step 2: Click the 'My Account' icon on the top right corner of your screen</li>
+        <li>Step 3: Click on 'outcome' to filter by the status(Running, Lost, Won or All) of the bet</li>
+        <li>Step 4: Select 'Bet Search' on the left side of the page</li>
+        <li>Step 5: Filter the 'Date From' and 'Date To' to the period of the bet placed.</li>
+        <li>Step 6: Click on 'proceed' to display your bets.</li>
+    </div>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">Column</div>
+        <div class="column" style="background-color:#bbb;">Column</div>
+        <div class="column" style="background-color:#ccc;">Column</div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
